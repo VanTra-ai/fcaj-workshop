@@ -5,40 +5,41 @@ weight: 7
 chapter: false
 pre: " <b> 7. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
->Tại đây bạn có thể tự do đóng góp ý kiến cá nhân về những trải nghiệm khi tham gia chương trình First Cloud AI Journey, giúp team FCAJ cải thiện những vấn đề còn thiếu sót dựa trên các hạng mục sau:
 
 ### Đánh giá chung
 
 **1. Môi trường làm việc**  
-Môi trường làm việc rất thân thiện và cởi mở. Các thành viên trong FCAJ luôn sẵn sàng hỗ trợ khi mình gặp khó khăn, kể cả ngoài giờ làm việc. Không gian làm việc gọn gàng, thoải mái, giúp mình tập trung tốt hơn. Tuy nhiên, mình nghĩ có thể bổ sung thêm một số buổi giao lưu hoặc team bonding để mọi người hiểu nhau hơn.
+Môi trường làm việc tại AWS cực kỳ chuyên nghiệp, năng động và giàu tính công nghệ. Không gian làm việc hiện đại, yên tĩnh, tạo điều kiện tối đa để mình tập trung nghiên cứu các kiến thức khó. Dù mình chủ yếu làm việc độc lập trên dự án, mình vẫn cảm nhận được sự sẵn sàng hỗ trợ từ mọi người xung quanh mỗi khi cần trao đổi về mặt hạ tầng hay quy trình công ty.
 
 **2. Sự hỗ trợ của mentor / team admin**  
-Mentor hướng dẫn rất chi tiết, giải thích rõ ràng khi mình chưa hiểu và luôn khuyến khích mình đặt câu hỏi. Team admin hỗ trợ các thủ tục, tài liệu và tạo điều kiện để mình làm việc thuận lợi. Mình đánh giá cao việc mentor cho phép mình thử và tự xử lý vấn đề thay vì chỉ đưa đáp án.
+Mentor luôn giải thích rất chi tiết và rõ ràng những thắc mắc của mình về các quy định nội bộ và tạo không gian thoải mái để mình tự do thực thi dự án theo cách riêng. Team admin hỗ trợ cực kỳ đắc lực trong việc cung cấp tài liệu và hoàn thiện các thủ tục hành chính, giúp mình có thể hoàn toàn tâm trí vào công việc chuyên môn.
 
 **3. Sự phù hợp giữa công việc và chuyên ngành học**  
-Công việc mình được giao phù hợp với kiến thức mình đã học ở trường, đồng thời mở rộng thêm những mảng mới mà mình chưa từng được tiếp cận. Nhờ vậy, mình vừa củng cố kiến thức nền tảng, vừa học thêm kỹ năng thực tế.
+Dự án WMS Pro là một sự kết hợp hoàn hảo giữa kiến thức lý thuyết về quản lý kho vận và kỹ năng lập trình Full-stack. Việc tự tay xây dựng hệ thống từ khâu thiết kế Database đến triển khai trên các nền tảng khác nhau đã giúp mình củng cố vững chắc kiến thức chuyên ngành và hiểu sâu hơn về quy trình vận hành Logistics thực tế.
 
 **4. Cơ hội học hỏi & phát triển kỹ năng**  
-Trong quá trình thực tập, mình học được nhiều kỹ năng mới như sử dụng công cụ quản lý dự án, kỹ năng làm việc nhóm, và cả cách giao tiếp chuyên nghiệp trong môi trường công ty. Mentor cũng chia sẻ nhiều kinh nghiệm thực tế giúp mình định hướng tốt hơn cho sự nghiệp.
+Đây là cơ hội lớn nhất mà mình nhận được. Mình đã học được cách quản lý một dự án quy mô lớn một mình, từ việc kiểm soát Version Control đến việc xử lý các lỗi runtime phức tạp. Đặc biệt, tư duy về "Cloud-native" và cách sử dụng các dịch vụ AWS đã mở ra một tầm nhìn mới cho sự nghiệp của mình.
 
 **5. Văn hóa & tinh thần đồng đội**  
-Văn hóa công ty rất tích cực: mọi người tôn trọng lẫn nhau, làm việc nghiêm túc nhưng vẫn vui vẻ. Khi có dự án gấp, mọi người cùng nhau cố gắng, hỗ trợ không phân biệt vị trí. Điều này giúp mình cảm thấy mình là một phần của tập thể, dù chỉ là thực tập sinh.
+Dù làm việc độc lập, mình vẫn thấy được văn hóa tôn trọng sự khác biệt và đề cao quyền tự chủ (Ownership) tại đây. Tinh thần làm việc nghiêm túc, tập trung vào kết quả nhưng vẫn luôn cởi mở trong việc chia sẻ kiến thức là điều mình rất trân trọng.
 
 **6. Chính sách / phúc lợi cho thực tập sinh**  
-Công ty có hỗ trợ phụ cấp thực tập và tạo điều kiện về thời gian linh hoạt khi cần thiết. Ngoài ra, việc được tham gia các buổi đào tạo nội bộ là một điểm cộng lớn.
-
+Các chính sách hỗ trợ và phụ cấp cho thực tập sinh rất rõ ràng và thỏa đáng. Việc công ty tạo điều kiện cho mình tham gia các buổi đào tạo nội bộ về công nghệ mới là một đặc quyền rất giá trị.
 
 ### Một số câu hỏi khác
-- Điều bạn **hài lòng nhất** trong thời gian thực tập?  
-- Điều bạn nghĩ công ty **cần cải thiện** cho các thực tập sinh sau?  
-- Nếu giới thiệu cho bạn bè, bạn có **khuyên họ thực tập ở đây không**? Vì sao?  
 
+- Điều bạn **hài lòng nhất** trong thời gian thực tập?
+  - Đó là sự tự do và quyền tự chủ (Ownership) trong dự án. Việc tự mình vượt qua các rào cản kỹ thuật để hoàn thiện một hệ thống lớn từ con số 0 mang lại cho mình sự tự tin rất lớn vào khả năng của bản thân.
+- Điều bạn nghĩ công ty **cần cải thiện** cho các thực tập sinh sau?
+  - Bên cạnh các buổi giao lưu học thuật hàng tuần đã rất tốt, công ty có thể tổ chức thêm các hoạt động Team Bonding phi kỹ thuật (như các buổi cafe giao lưu, trò chơi tập thể...). Điều này sẽ giúp các bạn thực tập sinh thuộc các mảng khác nhau gắn kết hơn về mặt cá nhân, giảm bớt cảm giác làm việc tách biệt khi theo đuổi dự án độc lập.
+- Nếu giới thiệu cho bạn bè, bạn có **khuyên họ thực tập ở đây không**? Vì sao?
+  - Chắc chắn là có. Đây là môi trường tuyệt vời để rèn luyện tính kỷ luật, khả năng tự học và là bệ phóng tốt nhất cho những ai muốn làm việc trong môi trường quốc tế.
 
 ### Đề xuất & mong muốn
-- Bạn có đề xuất gì để cải thiện trải nghiệm trong kỳ thực tập?  
+
+- Bạn có đề xuất gì để cải thiện trải nghiệm trong kỳ thực tập?
+  - Mình nghĩ chương trình có thể tổ chức các buổi "Quick Demo" hàng tuần để các bạn thực tập sinh trình bày tiến độ dự án, từ đó nhận được sự góp ý đa chiều từ nhiều người hơn.
 - Bạn có muốn tiếp tục chương trình này trong tương lai?
+  - Mình rất mong muốn được tiếp tục gắn bó với các dự án thực tế tại AWS.
 - Góp ý khác (tự do chia sẻ):
+  - Cảm ơn FCAJ đã tạo ra một hành trình thực tập đầy thử thách và ý nghĩa, giúp mình trưởng thành hơn rất nhiều cả về kỹ năng cứng lẫn tác phong làm việc.

@@ -6,42 +6,41 @@ chapter: false
 pre: " <b> 7. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
-
-> Here, you can freely share your personal opinions about your experience participating in the First Cloud AI Journey program. This will help the FCAJ team improve any shortcomings based on the following aspects:
-
 ### Overall Evaluation
 
 **1. Working Environment**  
-The working environment is very friendly and open. FCAJ members are always willing to help whenever I encounter difficulties, even outside working hours. The workspace is tidy and comfortable, helping me focus better. However, I think it would be nice to have more social gatherings or team bonding activities to strengthen relationships.
+The working environment at AWS is extremely professional, dynamic, and technology-driven. The modern, quiet workspace creates ideal conditions for me to focus on researching challenging knowledge. Although I mainly worked independently on the project, I could still feel the readiness of everyone around to support whenever I needed to discuss infrastructure or company processes.
 
 **2. Support from Mentor / Team Admin**  
-The mentor provides very detailed guidance, explains clearly when I don’t understand, and always encourages me to ask questions. The admin team supports administrative tasks, provides necessary documents, and creates favorable conditions for me to work effectively. I especially appreciate that the mentor allows me to try and solve problems myself instead of just giving the answer.
+The mentor always explained my questions about internal regulations very clearly and in detail, providing a comfortable space for me to execute the project in my own way. The admin team supported extremely effectively in providing documents and completing administrative procedures, allowing me to fully focus on my professional tasks.
 
 **3. Relevance of Work to Academic Major**  
-The tasks I was assigned align well with the knowledge I learned at university, while also introducing me to new areas I had never encountered before. This allowed me to both strengthen my foundational knowledge and gain practical skills.
+The WMS Pro project is a perfect combination of theoretical knowledge of warehouse management and Full-stack programming skills. Personally building the system from database design to multi-platform deployment helped me firmly consolidate my academic knowledge and gain a deep understanding of practical Logistics operation workflows.
 
 **4. Learning & Skill Development Opportunities**  
-During the internship, I learned many new skills such as using project management tools, teamwork skills, and professional communication in a corporate environment. The mentor also shared valuable real-world experiences that helped me better plan my career path.
+This is the biggest opportunity I received. I learned how to manage a large-scale project by myself, from controlling Version Control to handling complex runtime errors. In particular, the "Cloud-native" mindset and the usage of AWS services opened up a new vision for my career.
 
 **5. Company Culture & Team Spirit**  
-The company culture is very positive: everyone respects each other, works seriously but still keeps things enjoyable. When there are urgent projects, everyone works together and supports one another regardless of their position. This made me feel like a real part of the team, even as an intern.
+Despite working independently, I still experienced the culture of respecting diversity and promoting Ownership here. The serious, result-oriented working spirit, combined with an open willingness to share knowledge, is something I deeply appreciate.
 
 **6. Internship Policies / Benefits**  
-The company provides an internship allowance and offers flexible working hours when needed. In addition, having the opportunity to join internal training sessions is a big plus.
-
----
+The support policies and allowances for interns are very clear and satisfactory. The company creating conditions for me to join internal training sessions on new technologies is a highly valuable privilege.
 
 ### Additional Questions
-- What did you find **most satisfying** during your internship?  
-- What do you think the company **should improve** for future interns?  
-- If recommending to a friend, would you **suggest they intern here**? Why or why not?  
 
----
+- What were you **most satisfied with** during your internship?
+  - It was the freedom and Ownership in the project. Overcoming technical barriers by myself to complete a large system from scratch gave me tremendous confidence in my own abilities.
+- What do you think the company **needs to improve** for future interns?
+  - Besides the weekly academic exchanges which are already great, the company could organize more non-technical Team Bonding activities (such as coffee catch-ups, team games, etc.). This would help interns from different domains connect better on a personal level, reducing the feeling of working in isolation when pursuing independent projects.
+- If recommending to friends, would you **advise them to intern here**? Why or why not?
+  - Absolutely yes. This is a fantastic environment to cultivate discipline and self-learning skills, making it the best launching pad for anyone looking to work in an international environment.
 
 ### Suggestions & Expectations
-- Do you have any suggestions to improve the internship experience?  
-- Would you like to continue this program in the future?  
-- Any other comments (free sharing):
+
+- Do you have any suggestions to improve the internship experience?
+  - I think the program could organize weekly "Quick Demo" sessions where interns present their project progress and receive multi-dimensional feedback from more people.
+- Would you like to continue this program in the future?
+  - I would love to continue working with real-world projects at AWS.
+- Other feedback (freely share):
+  - Thank you FCAJ for creating a challenging and meaningful internship journey that helped me grow significantly in both hard skills and work ethic.
+
