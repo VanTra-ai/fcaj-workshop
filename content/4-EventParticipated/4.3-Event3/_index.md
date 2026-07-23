@@ -122,3 +122,4 @@ Participating in the workshop **"Amazon Web Services (AWS): Enterprise Cloud Arc
 
 #### Some event photos
 
+![Event picture](/images/event3.jpg)

@@ -103,3 +103,5 @@ Tham gia workshop **“Amazon Web Services (AWS): Enterprise Cloud Architectures
 - **Cơ hội không tự nhiên đến**: Phải liên tục gieo mầm bằng cách học hỏi, xây dựng project chất lượng và mở rộng quan hệ. Bạn phải cho mọi người thấy bạn là ai (Visibility) thì cơ hội mới tìm đến.
 
 #### Một số hình ảnh khi tham gia sự kiện
+
+![Event picture](/images/event3.jpg)

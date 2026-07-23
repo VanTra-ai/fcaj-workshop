@@ -103,4 +103,4 @@ Tham gia buổi **“FCAI workshop”** mang lại cho tôi những cảm xúc r
 
 #### Một số hình ảnh khi tham gia sự kiện
 
-[Event picture](\fcj-workshop-template\images\event1.JPG)
+![Event picture](/images/event1.JPG)

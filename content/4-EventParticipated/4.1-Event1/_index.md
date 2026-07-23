@@ -110,4 +110,4 @@ Participating in the **"FCAI Workshop"** was both inspiring and relatable becaus
 
 #### Some event photos
 
-[Event picture](\fcj-workshop-template\images\event1.JPG)
+![Event picture](/images/event1.JPG)
