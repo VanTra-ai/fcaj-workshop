@@ -116,23 +116,27 @@ ightarrow$ Enter EC2 Public IP (`54.169.12.125/32`) or select EC2 Security Group
    Paste environment configuration:
    ```env
    # --- DATABASE CONFIGURATION (Amazon RDS) ---
-   DB_HOST=wms-pro-db.c7asq8i066d6.ap-southeast-1.rds.amazonaws.com
+   DB_HOST=<YOUR_RDS_ENDPOINT> # Example: wms-pro-db.xxxxxx.ap-southeast-1.rds.amazonaws.com
    DB_PORT=5432
    DB_USER=postgres
-   DB_PASS=WmsPro2026Password!
+   DB_PASS=<YOUR_MASTER_PASSWORD>
    DB_NAME=logistics
    DB_SSL=false
 
    # --- SECURITY CONFIGURATION ---
-   JWT_SECRET=WmsProLogisticsSuperSecretKey2026!
+   JWT_SECRET=<YOUR_JWT_SECRET_KEY>
 
    # --- MAIL SERVICE (Nodemailer OTP) ---
    MAIL_HOST=smtp.gmail.com
    MAIL_PORT=587
-   MAIL_USER=phamvantra1301@gmail.com
-   MAIL_PASS=your_google_app_password
-   MAIL_FROM="WMS Logistics Pro" <phamvantra1301@gmail.com>
+   MAIL_USER=<YOUR_EMAIL_ADDRESS>
+   MAIL_PASS=<YOUR_GMAIL_APP_PASSWORD>
+   MAIL_FROM="WMS Logistics Pro" <<YOUR_EMAIL_ADDRESS>>
    ```
+
+   {{% notice warning %}}
+   ⚠️ **Security Notice:** When publishing documentation or code to public GitHub repositories, **NEVER hardcode** actual production sensitive data such as Real Database Passwords, JWT Secret Keys, or Email App Passwords. Always use placeholder values as shown above and keep actual `.env` files protected.
+   {{% /notice %}}
 
 4. Build production bundle:
    ```bash

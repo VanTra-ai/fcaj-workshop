@@ -119,23 +119,27 @@ ightarrow$ Nhập địa chỉ IP Public của EC2 (Ví dụ: `54.169.12.125/32`
    Dán bộ thông số cấu hình kết nối chuẩn vào file `.env` (Thay thế `DB_HOST` bằng Endpoint thực tế thu được ở Bước 1):
    ```env
    # --- DATABASE CONFIGURATION (Amazon RDS) ---
-   DB_HOST=wms-pro-db.c7asq8i066d6.ap-southeast-1.rds.amazonaws.com
+   DB_HOST=<YOUR_RDS_ENDPOINT> # Ví dụ: wms-pro-db.xxxxxx.ap-southeast-1.rds.amazonaws.com
    DB_PORT=5432
    DB_USER=postgres
-   DB_PASS=WmsPro2026Password!
+   DB_PASS=<YOUR_MASTER_PASSWORD>
    DB_NAME=logistics
    DB_SSL=false
 
    # --- SECURITY CONFIGURATION ---
-   JWT_SECRET=WmsProLogisticsSuperSecretKey2026!
+   JWT_SECRET=<YOUR_JWT_SECRET_KEY>
 
    # --- MAIL SERVICE (Nodemailer OTP) ---
    MAIL_HOST=smtp.gmail.com
    MAIL_PORT=587
-   MAIL_USER=phamvantra1301@gmail.com
-   MAIL_PASS=your_google_app_password
-   MAIL_FROM="WMS Logistics Pro" <phamvantra1301@gmail.com>
+   MAIL_USER=<YOUR_EMAIL_ADDRESS>
+   MAIL_PASS=<YOUR_GMAIL_APP_PASSWORD>
+   MAIL_FROM="WMS Logistics Pro" <<YOUR_EMAIL_ADDRESS>>
    ```
+
+   {{% notice warning %}}
+   ⚠️ **Cảnh báo Bảo mật (Security Notice):** Khi công khai tài liệu hoặc mã nguồn lên GitHub, **tuyệt đối KHÔNG hardcode** các thông tin nhạy cảm như Mật khẩu Database thực tế, JWT Secret Key, hoặc Mật khẩu ứng dụng Email. Hãy sử dụng các giá trị giữ chỗ (Placeholder) như mẫu trên và đảm bảo tệp `.env` chứa thông tin thật trên máy chủ EC2 luôn được bảo mật.
+   {{% /notice %}}
    *(Nhấn `Ctrl + O` $
 ightarrow$ `Enter` để lưu, sau đó nhấn `Ctrl + X` để thoát editor Nano).*
 
