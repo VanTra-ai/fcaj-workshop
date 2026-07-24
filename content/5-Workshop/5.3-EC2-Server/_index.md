@@ -1,80 +1,114 @@
 ---
-title: "Module 2: Launch EC2 Application Server"
+title: "Module 2: Deploy Amazon EC2 Application Server"
 date: 2026-07-15
 weight: 3
 chapter: false
-pre: " <b> 5.3 </b> "
+pre: " <b> 5.3. </b> "
 ---
 
-# MODULE 2: LAUNCH APPLICATION SERVER WITH AMAZON EC2
+### 1. Module Introduction
 
-### STEP 1: Access Amazon EC2 Service
-1. In the top search bar (`[Alt+S]`), type: **EC2**.
-2. Select **EC2 (Virtual Servers in the Cloud)** from the search results.
+{{% notice info %}}
+**Amazon EC2 (Elastic Compute Cloud)** provides scalable compute capacity in the AWS Cloud. In the **WMS Pro Logistics System**, the EC2 server serves as the operational heart running two main components:
+* **Backend API (NestJS):** Core business logic, TMS dispatching algorithms, RDS PostgreSQL connection, and real-time WebSockets on port `3333`.
+* **Frontend Web App (Next.js):** Management Dashboard UI for Coordinators and System Administrators.
+{{% /notice %}}
 
-![Access Amazon EC2 Service](/images/5-Workshop/5.3-EC2-Server/image11.png)
-
----
-
-### STEP 2: Launch Instance
-1. On the **EC2 Dashboard**, click the orange **Launch instance** button.
-
-![Click Launch Instance](/images/5-Workshop/5.3-EC2-Server/image4.png)
+{{% notice tip %}}
+**Pro Tip:** Using `t2.micro` or `t3.micro` instances paired with Ubuntu Server 24.04 LTS allows you to utilize 750 hours/month of server runtime and 30GB of EBS storage free under the AWS Free Tier.
+{{% /notice %}}
 
 ---
 
-### STEP 3: Configure EC2 Instance Parameters
+### 2. Step-by-Step Deployment Guide
 
-#### 1. Name and tags
-- **Name**: Enter `wms-pro-server`
+#### Step 1: Access Amazon EC2 Service
+1. Log in to the AWS Management Console.
+2. In the top search bar (`[Alt+S]`), type **EC2**.
+3. Select **EC2 (Virtual Servers in the Cloud)**.
 
-#### 2. Application and OS Images
-- Select **Ubuntu** (System provided).
-- **AMI**: Select **Ubuntu Server 24.04 LTS (HVM), SSD Volume Type** (64-bit x86).
-
-![Select Ubuntu OS](/images/5-Workshop/5.3-EC2-Server/image7.png)
-
-#### 3. Instance type
-- Choose `t3.micro` or `t2.micro` (**Free Tier** eligible).
-
-#### 4. Key pair (SSH Access Key)
-1. Click **Create new key pair**.
-2. **Key pair name**: Enter `wms-server-key`
-3. **Key pair type**: RSA
-4. **Private key file format**: `.pem` (for Linux/Mac/OpenSSH) or `.ppk` (for PuTTY).
-5. Click **Create key pair** and securely store the downloaded key file.
-6. Select the newly created key pair from the drop-down menu.
-
-![Configure Key Pair](/images/5-Workshop/5.3-EC2-Server/image3.png)
-![Key Pair Created](/images/5-Workshop/5.3-EC2-Server/image9.png)
-
-#### 5. Network settings (Security Group Firewall)
-- **VPC**: Select **Default VPC**.
-- **Auto-assign public IP**: Select **Enable** (Required to access server via Public IP).
-- **Firewall (Security group)**: Select **Create security group**.
-- Check the boxes:
-  - ☑ **Allow SSH traffic from**: Anywhere (`0.0.0.0/0`)
-  - ☑ **Allow HTTP traffic from the internet**: Anywhere (`0.0.0.0/0`)
-  - ☑ **Allow HTTPS traffic from the internet**: Anywhere (`0.0.0.0/0`)
-- Click **Add security group rule** to open the NestJS API port:
-  - **Type**: Custom TCP
-  - **Port range**: `3333`
-  - **Source**: Anywhere (`0.0.0.0/0`)
-
-![Network Settings Security Group](/images/5-Workshop/5.3-EC2-Server/image2.png)
-![Allow HTTP/HTTPS & Custom Port 3333](/images/5-Workshop/5.3-EC2-Server/image1.png)
-![Detailed Inbound Rules Setup](/images/5-Workshop/5.3-EC2-Server/image5.png)
-
-#### 6. Configure storage
-- Keep default storage: `8 GiB` or `20 GiB` **gp3/gp2** (Free Tier eligible).
+![Access Amazon EC2 Service](/images/5-Workshop/5.3-EC2-Server/image7.png)
 
 ---
 
-### STEP 4: Launch EC2 Instance
-1. In the right panel, click the orange **Launch instance** button.
-2. Verify **Successfully initiated launch of instance** message.
-3. Click the Instance ID link (e.g., `i-0123456789abcdef0`) to view server status.
+#### Step 2: Launch EC2 Instance
+1. On the EC2 Dashboard, find **Launch instance**.
+2. Click the orange **Launch instance** button.
 
-![Click Launch Instance](/images/5-Workshop/5.3-EC2-Server/image10.png)
-![Launch Successful](/images/5-Workshop/5.3-EC2-Server/image6.png)
-![View EC2 Instances List](/images/5-Workshop/5.3-EC2-Server/image8.png)
+![Launch EC2 Instance](/images/5-Workshop/5.3-EC2-Server/image8.png)
+
+---
+
+#### Step 3: Configure Detailed EC2 Server Parameters
+
+##### 2.1. Server Name (Name and tags)
+* **Name**: Enter `wms-pro-server`.
+
+##### 2.2. Operating System (AMI Selection)
+1. Under Quick Start, select **Ubuntu**.
+2. **Amazon Machine Image (AMI)**: Select **Ubuntu Server 24.04 LTS (HVM)**, SSD Volume Type (64-bit x86 - *Free tier eligible*).
+
+![Select Ubuntu OS](/images/5-Workshop/5.3-EC2-Server/image1.png)
+
+##### 2.3. Hardware Configuration (Instance type)
+* **Instance type**: Select `t2.micro` or `t3.micro` (*Free tier eligible*).
+
+##### 2.4. SSH Key Pair Configuration
+1. Under **Key pair (login)**, click **Create new key pair**.
+2. Configure parameters:
+   * **Key pair name**: Enter `wms-server-key`.
+   * **Key pair type**: Select **RSA**.
+   * **Private key file format**: Select `.pem` (for OpenSSH / MobaXterm / Termius / VS Code) or `.ppk` (for PuTTY).
+3. Click **Create key pair** to download the private key file.
+4. Select `wms-server-key` in the dropdown list.
+
+![Create Key Pair](/images/5-Workshop/5.3-EC2-Server/image11.png)
+![Select Key Pair](/images/5-Workshop/5.3-EC2-Server/image4.png)
+
+##### 2.5. Network & Security Group Settings
+1. Click **Edit** on the right side of **Network settings**.
+2. **VPC**: Select **Default VPC**.
+3. **Auto-assign public IP**: Select **Enable**.
+4. **Firewall (security groups)**: Select **Create security group**.
+5. **Security group name**: Enter `wms-ec2-sg`.
+6. Add the following Inbound Rules:
+
+| Rule Type | Protocol | Port Range | Source Type | Source CIDR | Purpose |
+| --- | --- | --- | --- | --- | --- |
+| **SSH** | TCP | `22` | Anywhere | `0.0.0.0/0` | Remote Terminal Management |
+| **HTTP** | TCP | `80` | Anywhere | `0.0.0.0/0` | Web App / Nginx Reverse Proxy |
+| **HTTPS** | TCP | `443` | Anywhere | `0.0.0.0/0` | SSL/TLS Encryption |
+| **Custom TCP** | TCP | `3333` | Anywhere | `0.0.0.0/0` | NestJS Backend API & Socket.io |
+
+![Security Group Settings 1](/images/5-Workshop/5.3-EC2-Server/image10.png)
+![Security Group Settings 2](/images/5-Workshop/5.3-EC2-Server/image9.png)
+![Security Group Rules](/images/5-Workshop/5.3-EC2-Server/image5.png)
+
+{{% notice warning %}}
+**Security Notice:** Opening ports 22 (SSH) and 3333 to `0.0.0.0/0` (Anywhere) is for testing purposes. In production, restrict port 22 to your personal static IP (*My IP*).
+{{% /notice %}}
+
+##### 2.6. Storage Configuration
+* **Root volume**: Keep default 8 GiB gp3 (SSD).
+
+---
+
+#### Step 4: Launch Instance & Retrieve Public IP
+1. Review settings in the Summary pane.
+2. Click **Launch instance**.
+3. Once launched, click the Instance ID to view server details.
+4. Record the **Public IPv4 address** (e.g., `54.169.12.125`). This IP will be used in `.env` files for Web and Mobile apps.
+
+![Launch Instance Success](/images/5-Workshop/5.3-EC2-Server/image3.png)
+![Instance Summary](/images/5-Workshop/5.3-EC2-Server/image2.png)
+![Public IP Address](/images/5-Workshop/5.3-EC2-Server/image6.png)
+
+---
+
+### 3. Module 2 Summary
+
+In this module, you have successfully:
+* Launched an **Amazon EC2 Ubuntu 24.04 LTS** instance (`wms-pro-server`) on AWS Free Tier.
+* Created the SSH key pair `wms-server-key` for remote administration.
+* Configured `wms-ec2-sg` opening ports 22, 80, 443, and 3333.
+* Obtained a Public IPv4 Address ready for application deployment.
